@@ -1,0 +1,399 @@
+@charset "utf-8";
+html,body{ height: 100%; }
+body{ font-family: 'Noto Sans KR', sans-serif; color : #666666; }
+ul,li{ list-style : none; }
+a{ color : #666666; text-decoration:none; }
+h1,h2,h3,h4,h5,h6{ line-height : 1; }
+
+
+/* 상단 고정형 메인메뉴 */
+#header{
+  position : fixed;
+  top: 0;
+  overflow : hidden;
+  padding : 45px 20px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background: #f4f4f4c0;
+  transition : 0.3s;
+}
+
+#header:hover{
+  background: #fff;
+}
+
+.hinner{
+  width: 1320px;
+  margin : 0 auto;
+}
+
+#header .inner{
+  float : right;
+  overflow : hidden;
+}
+#header .inner #login_menu, #header .inner #gnb{
+  float : left;
+}
+#logo {  
+  float : left;  
+  margin-right: 106px;
+  transform : translateY(-30%)
+}
+
+/* 로그인 메뉴 공통 */
+#header .inner ul > li{
+  float : left;
+  height : 22px;
+}
+
+#header .inner ul > li a{
+  line-height: 20px;
+}
+
+/* gnb 영역 */
+#gnb {
+  overflow : hidden;
+  margin-right: 106px;
+}
+
+#gnb li{
+
+  margin-left : 50px;
+}
+
+#gnb li:first-child{
+  margin-left : 0px;
+}
+
+/* 로그인 메뉴 영역 */
+#login_menu {
+  overflow : hidden;
+}
+
+#login_menu li{
+
+  margin-left: 32px;
+}
+
+#login_menu li:first-child{
+  margin-left: 0px;
+}
+
+#login_menu li span.count{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 100%;
+  background-color : #f6ca00;
+  color : white;
+  margin-left : 6px;
+  padding-bottom : 1px;
+}
+
+/* 메인 배너 영역 */
+#mainbanner{
+  background-image : url("../img/mainbanner1.jpg");
+  background-repeat: no-repeat;
+  background-position: -100px center;
+  background-size : cover;
+  min-width : 1320px;
+}
+#mainbanner .inner{
+  position : relative;
+  width : 1320px;
+  height : 100vh;
+  margin : 0 auto;
+}
+
+#mainbanner .main_text{
+  position : absolute;
+  text-align: center;
+  width : 100%;
+  min-height : 254px;
+  top: 50%;
+  transform : translateY(-50%);
+}
+
+/* 메인배너 메인타이틀 */
+#mainbanner .maintitle{
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 300;
+  color : #333333;
+}
+
+/* 메인배너 서브타이틀 */
+#mainbanner .subtitle{
+  font-size: 20px;
+  color : #666666;
+  margin-top: 30px;
+}
+
+.common_btn{
+  display: inline-block;
+  line-height: 60px;
+  height: 60px;
+  width: 180px;
+  font-weight : bold; /* 700과 같다 */
+  font-size: 20px;
+  margin-top: 40px;
+  color : #f6ca00;
+  background-color: #333;
+  border : 1px solid #333;
+  border-radius : 5px;
+  box-sizing: border-box;
+  transition : 0.2s;
+}
+
+.common_btn:hover{
+  color : black;
+  background-color: #f6ca00;
+  border : 1px solid #333;
+}
+
+/* section 영역 */
+
+#container section{
+  min-width: 1320px;
+}
+
+/* section 공통요소 start */
+#container section .inner{
+  width : 1320px;
+  min-height : 650px;
+  margin : 0 auto;
+  text-align: center;
+}
+
+#container section .inner h2{
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: 400;
+  color : #333333;
+
+}
+
+#container section .inner .subtitle{
+  margin-top : 27px;
+  font-size: 20px;
+  line-height: 30px;
+  color : #666666;
+}
+/* section 공통요소 end */
+
+#container section:nth-of-type(1) .inner{
+  min-height: 485px;
+  padding-top: 165px;
+}
+
+#container section:nth-of-type(2) .inner{
+  padding-top: 140px;
+  min-height: 510px;
+}
+
+#container section:nth-child(even){
+  background: #f9f9f9;
+}
+
+#container section .inner .box_wrap{
+  overflow : hidden;
+}
+#container section .inner .box_wrap li{
+  float : left;
+  padding : 0 20px;
+  width : calc(25% - 40px);
+}
+
+#container section .inner .box_wrap li .items{
+  border : 1px solid #e3e3e3;
+  padding : 45px 0;
+  min-height : 180px;
+}
+
+#container section .inner .box_wrap li .items h3{
+  font-size: 20px;
+  line-height: 20px;
+  color : #444;
+}
+
+#container section .inner .box_wrap li .items p{
+  line-height: 24px;
+  color : #666666;
+  margin : 32px 0;
+}
+#container section .inner .box_wrap li .items img{
+  width: 40px;
+}
+
+/* 협력업체 영역 */
+#container section .inner .thumb_img_wrap{
+  text-align: center; /* 자식요소 ul을 가운데 정렬 */
+
+}
+
+#container section .inner .thumb_img_wrap ul{
+  overflow : hidden;
+  display: inline-block; /* 자식요소 li컨텐츠 크기만큼 너비가 지정된다. */
+}
+
+#container section .inner .thumb_img_wrap ul:nth-child(1){
+  margin-top: 75px;
+}
+
+#container section .inner .thumb_img_wrap ul:nth-child(2){
+  margin-top: 80px;
+}
+
+#container section .inner .thumb_img_wrap ul li{
+  display: inline-block;
+  float : left;
+  width : 16.6666%;
+}
+
+#container section .inner .thumb_img_wrap ul li img{
+  width: 100%; /* 이미지가 초기값 220픽셀 이상 또는 이하로 변경 시 li % 기준으로 변경된다. */
+}
+
+/*  section 3번 style*/
+#container section .inner .box{
+  float : left;
+  width : 50%;
+  min-height : 650px;
+  text-align : center;
+}
+
+#container section .inner .box.img{
+  background-size : cover;
+}
+
+#container section:nth-child(3) .inner .box.img{
+  background : url('../img/section_3/bg_img.png') no-repeat center;
+}
+
+#container section:nth-child(4){
+  background-color : #f4f4f4;
+  background-image : url('../img/section_4/bg_img.png');
+  background-repeat : no-repeat;
+  background-position : calc(50% + 640px) center;
+  background-size : auto 100%;
+}
+
+#container section:nth-child(5){
+  background-color : #1d314a;
+}
+
+#container section:nth-child(5) .inner h2{
+  color : white;
+}
+
+#container section:nth-child(5) .inner .box.img{
+  background : url("../img/section_5/bg_img.png") no-repeat center;
+}
+
+#container section .inner .box .text_box{
+  display : inline-block;
+  text-align : left;
+  margin-top : 160px;
+}
+
+#container section .inner .box .text_box .common_btn{
+  text-align : center;
+}
+
+#footer{
+  background-color: #eeeeee;
+  min-width: 1320px;
+}
+
+#footer .inner{
+  position : relative;
+  width : 1320px;
+  height : 200px;
+  padding : 50px 20px 0;
+  box-sizing : border-box;
+  margin: 0 auto;
+  overflow : hidden;
+}
+
+#footer .inner .f_box{
+  float : left;
+}
+
+#footer .inner .f_box:nth-of-type(2){
+  padding-left: 75px;
+}
+
+/* footer site menu */
+#footer .inner .f_box ul{
+  overflow : hidden;
+}
+
+#footer .inner .f_box ul li{
+  height : 20px;
+  float : left;
+  margin-right: 57px;
+}
+
+#footer .inner .f_box ul li:last-child{
+  margin-right: 0px;
+}
+
+#footer .inner .f_box ul li a{
+  line-height: 20px;
+  color : #333;
+}
+
+#footer .inner .f_box .tel{
+  margin-top: 20px;
+}
+
+#footer .inner .f_box .tel a{
+  font-size : 16px;
+  color : #333333;
+  font-weight: bold;
+}
+
+#footer .inner .f_box .copyright{
+  font-size : 12px;
+  line-height: 14px;
+  color : #777777;
+  margin-top: 23px;
+}
+
+#footer #familySite{
+  width: 190px;
+  height: 30px;
+  border : 1px solid #d1d1d1;
+  position: absolute;
+  color : #333333;
+  right : 20px;
+  top: 40px;
+  outline: none;
+  appearance : none;
+  -ms-appearance : none;
+  -o-appearance : none;
+  -moz-appearance : none;
+  -webkit-appearance : none;
+  padding-right : 30px;
+  padding-left: 15px;
+  background-color: white;
+  background-image: url('../img/select_box_arrow.png');
+  background-repeat: no-repeat;
+  background-position : calc(100% - 15px) center;
+}
+
+#footer #familySite:focus{
+  border : 1px solid #999999;
+  background-image: url('../img/select_box_arrow_focus.png');
+  /* background-image: url('../img/arrow_person.png'); */
+}
+
+
+
+
+
+
+/*  */
