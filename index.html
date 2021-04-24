@@ -3,13 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>wisely</title>
+  <title>hansot</title>
   <meta name="description" content="정직한 한솥">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/initial.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- <script src="./js/prefix.js"></script> -->
+  <script src="./js/prefix.js"></script>
+  <script type="text/javascript" defer src="js/main.js"></script>
   <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
      <![endif]-->
@@ -30,8 +33,31 @@
     </div>
   </div>
   <div id="wrap">
+    <!-- #gnb btn 클릭 시 등장하는 메뉴 (테블릿, 모바일 메뉴) -->
+    <div id="mgnb">
+      <ul>
+        <li><a href="#">Brand</a></li>
+        <li><a href="#">ESG</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">EVENT</a></li>
+        <li><a href="#">FRANCHISE</a></li>
+        <li><a href="#">MANSOT</a></li>
+        <li><a href="#">로그인</a></li>
+        <li class="cart"><a href="#">장바구니</a></li>
+      </ul>
+      <!-- 닫기 버튼 -->
+      <div id="mgnb_btn">
+        <span></span><span></span>
+      </div>
+    </div>
+
     <!-- #header -->
     <header id="header">
+      <!-- #gnb_btn (모바일 메뉴 버튼) -->
+      <div id="gnb_btn">
+        <span></span><span></span><span></span>
+      </div>
       <div class="hinner">
         <!-- #logo -->
         <div id="logo">
