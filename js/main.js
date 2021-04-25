@@ -1,5 +1,5 @@
 
-// 테블릿, 모바일 gnb 조작 버튼
+// 테블릿, 모바일 mgnb 조작 버튼
 function gnbControl() {
     document.querySelector("#gnb_btn").addEventListener('click', function () {
         document.querySelector("#mgnb").style.left = "0%"

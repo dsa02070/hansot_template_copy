@@ -22,13 +22,14 @@ sub_title : #666;
 
 /* #gnb_btn(gnb tablet ver) */
 #gnb_btn{
+  display: none;
   position : absolute;
   top: 40%;
   right: 5%;
-  z-index: 700;
-  display: none;
   cursor : pointer;
+  z-index: 700;
 }
+
 #gnb_btn span{
   display: block;
   width: 30px;
@@ -45,15 +46,15 @@ sub_title : #666;
 /* #mgnb 모바일, 테블릿 전용 */
 #mgnb{
   position : fixed;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: -100%;
+  width: 100%;
+  height: 100%;
   background: #f1f1f1ee;
   text-align: center;
-  z-index: 600;
   padding-top: 4rem;
   transition : 0.5s;
+  z-index: 600;
 }
 
 #mgnb li{
@@ -83,11 +84,11 @@ sub_title : #666;
 }
 
 #mgnb_btn{
+  display: block;
   position : absolute;
   top: 4%;
   right: 5%;
   z-index: 800;
-  display: block;
   width: 40px;
   height: 40px;
   transition : 0.4s;
@@ -95,17 +96,17 @@ sub_title : #666;
 }
 
 #mgnb_btn span{
+  display: block;
   position : absolute;
   top: 50%;
   left: 50%;
-  display: block;
   width: 30px;
   height: 30px;
   background: #000;
   margin-bottom: 8px;
+  border-radius: 100%;
   transition : 0.3s;
   transform: translate(-50%,-50%);
-  border-radius: 100%;
 }
 
 #mgnb_btn:hover span{
@@ -123,12 +124,12 @@ sub_title : #666;
 
 /* #header area */
 #header{
+  overflow : hidden;
   position : fixed;
   top: 0;
-  overflow : hidden;
-  padding : 45px 20px 10px;
   box-sizing: border-box;
   width: 100%;
+  padding : 45px 20px 10px;
   background: #f4f4f4c0;
   transition : 0.3s;
   z-index: 100;
@@ -145,11 +146,13 @@ sub_title : #666;
 
 #header .inner{
   float : right;
-  overflow : hidden;
 }
+
 #header .inner #login_menu, #header .inner #gnb{
   float : left;
 }
+
+/* #logo area */
 #logo {  
   float : left;  
   margin-right: 106px;
@@ -223,17 +226,17 @@ sub_title : #666;
 }
 
 #login_menu li span.count{
-  position: relative;
   display: inline-block;
+  position: relative;
   width: 20px;
   height: 20px;
   line-height: 19px;
   text-align: center;
   border-radius: 100%;
-  background-color : #f6ca00;
-  color : white;
   margin-left : 6px;
   padding-bottom : 1px;
+  background-color : #f6ca00;
+  color : white;
 }
 
 /* #mainbanner area */
@@ -279,18 +282,18 @@ sub_title : #666;
 /* .common_btn style area */
 .common_btn{
   display: inline-block;
-  line-height: 60px;
-  height: 60px;
   width: 180px;
+  height: 60px;
+  line-height: 60px;
   font-weight : bold;
   font-size: 20px;
   margin-top: 40px;
-  color : #f6ca00;
-  background-color: #333;
-  border : 1px solid #333;
   border-radius : 5px;
   box-sizing: border-box;
   transition : 0.2s;
+  color : #f6ca00;
+  background-color: #333;
+  border : 1px solid #333;
 }
 
 .common_btn:hover{
@@ -329,11 +332,11 @@ sub_title : #666;
   line-height: 30px;
   color : #666;
 }
-/* section common style start */
 
+/* section inner style */
 #container section:nth-of-type(1) .inner{
-  min-height: 485px;
   padding-top: 165px;
+  min-height: 485px;
 }
 
 #container section:nth-of-type(2) .inner{
@@ -345,9 +348,11 @@ sub_title : #666;
   background: #f9f9f9;
 }
 
+/* section#first style */
 #container section .inner .box_wrap{
   overflow : hidden;
 }
+
 #container section .inner .box_wrap li{
   float : left;
   padding : 0 20px;
@@ -375,7 +380,7 @@ sub_title : #666;
   width: 40px;
 }
 
-/* food menu area */
+/* section#second style */
 #container section .inner .thumb_img_wrap{
   text-align: center;
 }
@@ -390,24 +395,24 @@ sub_title : #666;
 }
 
 #container section .inner .thumb_img_wrap ul li{
-  position : relative;
   display: inline-block;
+  overflow : hidden;
   float : left;
+  position : relative;
   width : 310px;
   margin-right: 20px;
-  overflow: hidden;
 }
 
 #container section .inner .thumb_img_wrap ul li span{
   display: block;
-  background: rgba(0, 0, 0, 0.6);
   position : absolute;
-  color : white;
-  width: 100%;
   top: 100%;
-  font-size: 16px;
-  transition : 0.3s;
+  width: 100%;
   line-height: 50px;
+  font-size: 16px;
+  color : white;
+  background: rgba(0, 0, 0, 0.6);
+  transition : 0.3s;
 }
 
 #container section .inner .thumb_img_wrap ul li:hover span{
@@ -423,7 +428,7 @@ sub_title : #666;
   transition : 0.35s;
 }
 
-/*  section 3번 style */
+/*  section#third style */
 #container section .inner .box{
   float : left;
   width : 50%;
@@ -435,10 +440,12 @@ sub_title : #666;
   background-size : cover;
 }
 
+/*  section#third img1 */
 #container section:nth-child(3) .inner .box.img{
   background : url('../img/S_img1.jpg') no-repeat center;
 }
 
+/*  section#third img2 */
 #container section:nth-child(4) .inner .box.img{
   background-color : #f9f9f9;
   background-image : url('../img/S_img2.jpg');
@@ -451,8 +458,9 @@ sub_title : #666;
   background-color : #fff;
 }
 
+/*  section#third img3 */
 #container section:nth-child(5) .inner .box.img{
-  background-image : url("../img/S_img4.jpg");
+  background-image : url("../img/S_img3.jpg");
   background-size : auto 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -492,7 +500,7 @@ sub_title : #666;
   padding-left: 75px;
 }
 
-/* #footer menu */
+/* #footer ul style */
 #footer .inner .f_box ul{
   overflow : hidden;
 }
@@ -532,6 +540,7 @@ sub_title : #666;
   color : #333;
 }
 
+/* #footer 고객센터 번호 style */
 #footer .inner .f_box .tel{
   margin-top: 20px;
 }
@@ -542,6 +551,7 @@ sub_title : #666;
   font-weight: bold;
 }
 
+/* #footer copyright style */
 #footer .inner .f_box .copyright{
   font-size : 12px;
   line-height: 14px;
@@ -549,7 +559,7 @@ sub_title : #666;
   margin-top: 30px;
 }
 
-/* familySite area */
+/* familySite style */
 #footer #familySite{
   width: 190px;
   height: 30px;
@@ -579,7 +589,7 @@ sub_title : #666;
 
 /* media query start */
 @media screen and (max-width : 1355px){
-
+  /* header style */
   .hinner{
     width: 100%;
   }
@@ -592,6 +602,8 @@ sub_title : #666;
   #gnb li{
     margin-left: 40px;
   }
+
+  /* mainbanner style */
   #mainbanner{
     min-width: 100%;
   }
@@ -603,7 +615,6 @@ sub_title : #666;
     width: 100%;
     margin-top: 2rem;
   }
-
   #mainbanner .maintitle{
     font-size: 36px;
     line-height: 38px;
@@ -613,12 +624,15 @@ sub_title : #666;
     margin-top: 20px;
   }
 
+  /* 공통버튼 style */
   .common_btn{
     width: 140px;
     height: 50px;
     line-height: 50px;
     font-size: 18px;
   }
+
+  /* seciont style */
   #container section{
     min-width: 100%;
   }
@@ -626,15 +640,21 @@ sub_title : #666;
     width :100%;
     min-height : 50vw;
   }
+
+  /* section maintitle */
   #container section .inner h2{
     font-size: 3vw;
     line-height: 4vw;
   }
+
+  /* section subtitle */
   #container section .inner .subtitle{
     font-size: 1.5vw;
     line-height: 2vw;
     margin-top: 2vw;
   }
+
+  /* section 별 .inner style */
   #container section:nth-of-type(1) .inner{
     min-height: 30vw;
     padding: 6vw 0 6vw;
@@ -644,11 +664,13 @@ sub_title : #666;
     min-height: 40vw;
   }
 
+  /* section#first style */
   #container section .inner .box_wrap li{
     padding : 0 10px;
   width : calc(25% - 20px);
   }
 
+  /* section#second style */
   #container section .inner .thumb_img_wrap ul li{
     width: calc(25% - 20px);
   }
@@ -657,24 +679,27 @@ sub_title : #666;
     line-height: 30px;
     height: 100%;
   }
+
+
+  /* section#third style */
   #container section .inner .box{
     float : left;
     width : 50%;
     min-height : 50vw;
   }
-
   #container section .inner .box .text_box{
     display : inline-block;
     text-align : left;
     margin-top : 10vw;
   }
-
   #container section .inner .box.img{
     background-size : auto;
   }
   #container section:nth-child(3) .inner .box.img{
     background-size: auto 100%;
   }
+
+  /* footer style */
   #footer{
     min-width: 100%;
   }
@@ -700,12 +725,15 @@ sub_title : #666;
 }
 
 @media screen and (max-width : 950px){
+  /* header style */
   #header{
     padding : 2vw 2vw 1vw;
   }
   #logo{
     transform : translateY(-10%)
   }
+
+  /* section#first style */
   #container section .inner .box_wrap li{
     padding: 3vw 3vw;
     width: calc(50% - 6vw);
@@ -714,21 +742,22 @@ sub_title : #666;
     min-height: 20vw;
     padding: 3vw 0 3vw;
   }
+
+  /* footer style */
   #footer .inner .f_box ul li{
     font-size: 12px;
     margin-right: 40px;
   }
-
   #footer .inner .f_box ul li:after{
     display: none;
   }
-
   #footer .inner .f_box .tel a{
     font-size: 16px;
   }
 }
 
 @media screen and (max-width : 768px){
+  /* header style */
   #header{
     padding : 1vw 2vw 2vw;
   }
@@ -741,6 +770,8 @@ sub_title : #666;
   #gnb_btn{
     top: 30%;
   }
+
+  /* mainbanner style */
   #mainbanner .maintitle{
     font-size: 36px;
     line-height: 38px;
@@ -757,38 +788,44 @@ sub_title : #666;
     margin-top: 20px;
   }
 
+  /* section stlye */
   #container .inner{
     padding: 20px;
     box-sizing: border-box;
   }
 
+  /* section maintitle style */
   #container section .inner h2{
     font-size: 22px;
     line-height: 24px;
   }
+
+  /* section subtitle style */
   #container section .inner .subtitle{
     font-size: 14px;
     line-height: 18px;
     margin-top: 18px;
   }
 
+  /* section#second style */
   #container section .inner .thumb_img_wrap ul:nth-child(1){
     margin-top: 0px;
     padding: 30px;
   }
-
   #container section .inner .thumb_img_wrap ul li{
-  margin: 10px;
-  width: calc(50% - 20px);
+    margin: 10px;
+    width: calc(50% - 20px);
   }
   #container section .inner .thumb_img_wrap ul li span{
     font-size: 16px;
-    line-height: 20px;
     height: 80%;
+    line-height: 20px;
   }
   #container section .inner .thumb_img_wrap ul li:hover span{
     top: 88%;
   }
+
+  /* footer style */
   #footer .inner .f_box:nth-of-type(2){
     padding-left: 20px;
   }
@@ -811,29 +848,28 @@ sub_title : #666;
 }
 
 @media screen and (max-width : 600px){
+  /* section#first style */
   #container section .inner .box_wrap{
     width: 80%;
     margin : 0 auto;
   }
   #container section .inner .box_wrap li{
+    width: 100%;
     padding: 0;
     margin-bottom: 20px;
-    width: 100%;
   }
 
+  /* mainbanner stlye */
   #mainbanner{
     min-width: 398px;
   }
-
   #mainbanner .inner{
     height: 300px;
   }
-
   #mainbanner .main_text{
     width: 100%;
     margin-top: 3rem;
   }
-
   #mainbanner .maintitle{
     font-size: 28px;
     line-height: 30px;
@@ -841,7 +877,6 @@ sub_title : #666;
   #mainbanner .subtitle{
     font-size: 18px;
   }
-
   .common_btn{
     width: 100px;
     height: 40px;
@@ -849,15 +884,14 @@ sub_title : #666;
     font-size: 16px;
   }
 
+  /* section style */
   #container section{
     min-width: 398px;
   }
-
   #container section:nth-of-type(2) .inner{
-    padding : 24px;
     width: 80%;
+    padding : 24px;
   }
-
   #container section .inner h2{
     font-size: 26px;
     line-height: 28px;
@@ -868,46 +902,43 @@ sub_title : #666;
     margin-top: 20px;
   }
 
+  /* section#second style */
   #container section .inner .thumb_img_wrap ul:nth-child(1) {
     margin-top: 0px;
   }
-
   #container section .inner .thumb_img_wrap ul li{
     width: 100%;
     margin : 10px auto;
   }
-
   #container section .inner .thumb_img_wrap ul li span{
     font-size: 16px;
-    line-height: 24px;
     height: 100%;
+    line-height: 24px;
   }
+
+  /* section#third style */
   #container section .inner .box{
     float : none;
     width : 80%;
     min-height : 250px;
     margin : 20px auto 0;
   }
-
   #container section .inner .box .text_box{
     text-align: center;
     margin : 60px 0;
   }
-
   #container section:nth-child(3) .inner .box.img{
-    background : url('../img/S_img1.jpg') no-repeat center;
     background-size: 85%;
   }
-
   #container section:nth-child(4) .inner .box.img{
     margin: 0px auto;
     background-size: 85%;
   }
-
   #container section:nth-child(5) .inner .box.img{
     background-size: 85%;
   }
 
+  /* footer style */
   #footer{
     min-width: 398px;
   }
