@@ -7,11 +7,11 @@ ul,li{ list-style : none; }
 a{ color : #666666; text-decoration:none; }
 h1,h2,h3,h4,h5,h6{ line-height : 1; }
 
-
 /* z-index value
 #gnb_btn : 700;
 #header : 100;
 #mgnb : 600;
+.top : 550;
 */
 
 /* color 
@@ -19,6 +19,30 @@ primary color : #f6ca00;
 title : #333;
 sub_title : #666;
 */
+
+/* top button */
+.top{
+  position : fixed;
+  bottom: 30px;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  border-radius: 50% 50% 0% 50%;
+  transition : 0.2s;
+  cursor : pointer;
+  z-index: 550;
+}
+
+.top:hover{
+  box-shadow: 0 0 5px black;
+  color : #000;
+  background: #f6ca00;
+}
 
 /* #gnb_btn(gnb tablet ver) */
 #gnb_btn{
@@ -270,6 +294,13 @@ sub_title : #666;
   line-height: 60px;
   font-weight: 300;
   color : #333333;
+  animation : TextMove 1s both;
+  opacity: 0;
+}
+
+@keyframes TextMove {
+  0%{transform: translateY(-20%); opacity : 0;}
+  100%{transform: translateY(0%);  opacity : 1;}
 }
 
 /* #mainbanner .subtitle area */
@@ -277,6 +308,9 @@ sub_title : #666;
   font-size: 20px;
   color : #666666;
   margin-top: 30px;
+  animation : TextMove 1s both;
+  animation-delay: 0.75s;
+  opacity: 0;
 }
 
 /* .common_btn style area */
@@ -306,6 +340,23 @@ sub_title : #666;
 #container section{
   min-width: 1320px;
 }
+
+/* scroll Event style start */
+#container #third{
+  transition : 1.5s;
+  opacity: 0;
+}
+
+#container #fourth{
+  transition : 1.5s;
+  opacity: 0;
+}
+
+#container #fifth{
+  transition : 1.5s;
+  opacity: 0;
+}
+/* scroll Event style end */
 
 /* section common style start */
 #container section .inner{
@@ -757,6 +808,15 @@ sub_title : #666;
 }
 
 @media screen and (max-width : 768px){
+  /* .top button */
+  .top{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    bottom: 15px;
+  }
+
   /* header style */
   #header{
     padding : 1vw 2vw 2vw;
@@ -790,7 +850,7 @@ sub_title : #666;
 
   /* section stlye */
   #container .inner{
-    padding: 20px;
+    padding: 0 20px;
     box-sizing: border-box;
   }
 
@@ -832,6 +892,7 @@ sub_title : #666;
 }
 
 @media screen and (max-width : 642px){
+  /* footer style */
   #footer .inner .f_box:nth-of-type(2){
     padding-left: 10px;
   }
@@ -848,6 +909,15 @@ sub_title : #666;
 }
 
 @media screen and (max-width : 600px){
+  /* .top button */
+  .top{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    bottom: 15px;
+  }
+
   /* section#first style */
   #container section .inner .box_wrap{
     width: 80%;
@@ -860,9 +930,6 @@ sub_title : #666;
   }
 
   /* mainbanner stlye */
-  #mainbanner{
-    min-width: 398px;
-  }
   #mainbanner .inner{
     height: 300px;
   }
@@ -885,9 +952,6 @@ sub_title : #666;
   }
 
   /* section style */
-  #container section{
-    min-width: 398px;
-  }
   #container section:nth-of-type(2) .inner{
     width: 80%;
     padding : 24px;
@@ -910,10 +974,12 @@ sub_title : #666;
     width: 100%;
     margin : 10px auto;
   }
+  #container section .inner .thumb_img_wrap ul li:hover span{
+    top: 85%;
+  }
   #container section .inner .thumb_img_wrap ul li span{
     font-size: 16px;
-    height: 100%;
-    line-height: 24px;
+    line-height: 40px;
   }
 
   /* section#third style */
@@ -939,9 +1005,6 @@ sub_title : #666;
   }
 
   /* footer style */
-  #footer{
-    min-width: 398px;
-  }
   #footer .inner{
     padding: 20px 10px 0;
   }
@@ -955,5 +1018,35 @@ sub_title : #666;
   }
   .f_box img{
     width: 20%;
+  }
+}
+
+@media screen and (max-width : 500px){
+  #mainbanner{
+    min-width: 320px;
+  }
+  #mainbanner .maintitle{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  #mainbanner .subtitle{
+    font-size: 12px;
+  }
+  #container section{
+    min-width: 320px;
+  }
+  #container section .inner .thumb_img_wrap ul li span{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #footer{
+    min-width: 320px;
+  }
+}
+
+@media screen and (max-width : 370px){
+  #container section .inner .thumb_img_wrap ul li span{
+    font-size: 12px;
+    line-height: 20px;
   }
 }
