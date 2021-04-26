@@ -25,12 +25,15 @@ let fifth = document.querySelector('#fifth');
 function scrollEvent() {
     if (document.documentElement.scrollTop >= thirdTop - 600) {
         third.style.opacity = '100%';
+        third.style.transform = 'translateY(0%)';
     };
     if (document.documentElement.scrollTop >= fourthTop - 600) {
         fourth.style.opacity = '100%';
+        fourth.style.transform = 'translateY(0%)';
     };
     if (document.documentElement.scrollTop >= fifthTop - 600) {
         fifth.style.opacity = '100%';
+        fifth.style.transform = 'translateY(0%)';
     };
 };
 

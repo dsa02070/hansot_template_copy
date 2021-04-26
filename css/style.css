@@ -345,16 +345,19 @@ sub_title : #666;
 #container #third{
   transition : 1.5s;
   opacity: 0;
+  transform: translateY(5%);
 }
 
 #container #fourth{
   transition : 1.5s;
   opacity: 0;
+  transform: translateY(5%);
 }
 
 #container #fifth{
   transition : 1.5s;
   opacity: 0;
+  transform: translateY(5%);
 }
 /* scroll Event style end */
 
