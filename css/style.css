@@ -210,6 +210,11 @@ sub_title : #666;
 #gnb li a{
   position: relative;
   padding-bottom: 5px;
+  transition : 0.2s;
+}
+
+#gnb li:hover a{
+  color : #f6ca00;
 }
 
 #gnb li a:after{
