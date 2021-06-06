@@ -39,7 +39,7 @@ function scrollEvent() {
 
 // .top 버튼 누르면 상단으로
 function goTop() {
-    if (document.documentElement.scrollTop >= 50) { // 스크롤탑이 150 이상되면
+    if (document.documentElement.scrollTop >= 50) { // 스크롤탑이 50 이상되면
         document.querySelector('.top').style.right = '15px' // right : 15px
     } else {
         document.querySelector('.top').style.right = '-50px' // 150 미만이라면 -50px
